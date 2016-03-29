@@ -39,7 +39,7 @@
              Copyright (c) 2016 Eesti Keele Instituut              
               Liisi Piits, Sulev Iva, Indrek Kiissel
              
-         HTK-3.4.1, HTS-2.3.patch, HTS-engine_API_1.10
+           HTK-3.4.1, HTS-2.3.patch, HTS-engine_API_1.10
              	                                        
 
 ==============================================================================
