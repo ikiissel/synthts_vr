@@ -36,8 +36,12 @@
 ==============================================================================
 
                    Võru keele HTS-kõnesüntees                     
-             Copyright (c) 2016 Eesti Keele Instituut              
-              Liisi Piits, Sulev Iva, Indrek Kiissel
+           
+               Eesti Keele Instituut 2016 (EKT-84)
+                   Liisi Piits, Indrek Kiissel
+           
+                  Võru Instituut 2016 (EKT-85)
+                           Sulev Iva
              
            HTK-3.4.1, HTS-2.3.patch, HTS-engine_API_1.10
              	                                        
