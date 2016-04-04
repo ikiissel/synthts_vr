@@ -1,3 +1,7 @@
 2016-03-29  ikiissel
 	* esimene üleslaadimine
+	.
+2016-04-04  ikiissel
+	* bin/synthts_et.cpp
+	void ReadUTF8Text(CFSWString &text, const char *fn) veaparandus
 
