@@ -218,7 +218,7 @@ INTPTR do_phrases(utterance_struct &u) {
             if (res.GetLength() > 0) {                
                 push_ph_res(u, p, res);
             }
-               p.s = L"sulgudes";
+               p.s = L"sulgõ seen";
                u.phr_vector.AddItem(p);
 
         } else
