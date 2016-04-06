@@ -5,3 +5,8 @@
 	* bin/synthts_et.cpp
 	void ReadUTF8Text(CFSWString &text, const char *fn) veaparandus
 
+2016-04-04  ikiissel
+	* bin/synthts_et.cpp
+	väiksem fraseerimise veaparandus
+	lisasin lüliti -utt lausungite printimiseks
+

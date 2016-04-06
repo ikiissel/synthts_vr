@@ -67,6 +67,7 @@ int PrintUsage() {
     fprintf(stderr,"\t-o 	[väljund-wav]  \n");
     fprintf(stderr,"\t-m 	[hääle nimi, vt kataloogi htsvoices/] \n");
     fprintf(stderr,"\t-r 	[kõnetempo, double, 0.01-2.76] \n");
+	 fprintf(stderr,"\t-utt 	[prindi lausung]\n");
     fprintf(stderr,"\t-debug 	[prindi labeli struktuur]\n");
     fprintf(stderr,"\t-raw 	[väljund-raw]\n");
     fprintf(stderr,"\t-dur 	[foneemid koos kestustega failinimi]\n");
@@ -143,6 +144,7 @@ int main(int argc, char* argv[]) {
     FILE * outfp;
     char* dur_fname;
     FILE * durfp;    
+    bool print_utt = false;
     bool print_label = false;
     bool write_raw = false;
     bool write_durlabel = false;
@@ -205,6 +207,9 @@ int main(int argc, char* argv[]) {
             if (i + 1 < argc) {
                 speed = atof(argv[i + 1]);
             }
+        }
+        if (CFSAString("-utt") == argv[i]) {
+            print_utt = true;
         }
         if (CFSAString("-debug") == argv[i]) {
             print_label = true;
@@ -269,7 +274,7 @@ int main(int argc, char* argv[]) {
     if (!write_raw) HTS_Engine_write_header(&engine, outfp, 1);
     for (INTPTR i = 0; i < res.GetSize(); i++) {
 
-        CFSArray<CFSWString> label = do_all(res[i], print_label);
+        CFSArray<CFSWString> label = do_all(res[i], print_label, print_utt);
 
         std::vector<std::string> v;
         v = to_vector(label);
